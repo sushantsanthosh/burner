@@ -1,0 +1,131 @@
+@import url(https://fonts.bunny.net/css?family=rubik:400,500,600);
+
+html {
+    font-family: 'Rubik','sans-serif';
+    background-color: #efefd7;
+}
+body {
+    color: #C53F40;
+  
+}
+.title {
+    text-align: center; 
+    padding-top: 4.5%;
+    font-size: 500%;    
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.nav-container {
+    margin: 0;
+    width: 100%;
+}
+
+.title {
+    font-size: 200%;
+    display: flex;
+}
+
+.title img {
+    width: 125%;
+    height: 125%;
+}
+
+
+.child {    
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+} 
+
+
+.nav-links {
+    text-align: center;
+    margin-right: 4.5%;
+}
+
+
+ul {
+    list-style-type: none;
+    display: inline-block;  
+    margin: 0;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 100%;
+}
+ 
+li{
+    float: left; 
+}
+li a {
+    color: #005C6E;
+    opacity: 0.6;
+    font-weight: 400;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+    font-size: 150%;   
+    display: block;
+    padding: 8px;
+}
+
+li a:hover {
+    opacity: 1;
+    font-size: 151.5%;
+}
+
+.topic{
+    text-align: center;
+    font-size: 500%;
+    text-decoration: underline;
+    margin: 0;
+    padding-bottom: 5%;
+}
+
+.section-left {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    border-radius: 1%;
+}
+.section-right {
+    display: flex;
+    align-items: center;
+
+}
+.para {  
+    font-size: 150%;
+    font-weight: 400;
+    color: #444444;
+    padding: 2%;
+    border: 0.1em dashed rgba(0,0,0,0.5);
+}
+
+.right {
+    margin-right:5%;
+}
+
+.left {
+    margin-left: 5%;
+}
+
+.aboutMe {
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+}
+
+.paraAboutMe{
+    margin: 0% 20% 0% 20%;
+    font-size: 150%;
+    font-weight: 400;
+    color: #444444;
+    padding-top: 2%;
+}
+
+
+.content {
+    text-align: center;
+}
