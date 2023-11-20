@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="src/style.css" type="text/css"/>
+
+    <title>Burner</title>
+    <link rel="icon" type="image/x-icon" href="images/firelogo.png" />
+    <script defer src="src\main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-panel noselect">
+            <!-- Till the action button! -->
+            <div class="top">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html" style="padding-left: 100px;"><img src="images/firelogo.png" alt="logo" /></a>
+                </div>
+
+                <div class="icon-text-button" onclick="goTo('index.html')">
+                    <i class="material-symbols-outlined">home</i>
+                    <span>Home</span>
+                </div>
+
+                <div class="icon-text-button" onclick="goTo('firemanguy.html')">
+                    <i class="material-symbols-outlined">account_circle</i>
+                    <span>Profile</span>
+                </div>
+
+                <div class="action-button large-button" onclick="goTo('secret.html')">
+                    <span style="color:white;">LaFlame</span>
+                </div>
+            </div>
+
+            <div class="who-to-follow">
+                <h3 style="color:#fd9319">Who To Follow</h3>
+
+                <!-- User 1 -->
+                <div class="profile-button rect-button noselect" onclick="goTo('bigmanbeatty.html')">
+                    <!-- Is a grid -->
+                    <img src="images/captbeatty-modified.png" alt="Profile Picture" />
+                    <span class="profile-name">Captain Beatty</span>
+                    <span class="profile-username">@bigmanbeatty</span>
+                    <i class="material-symbols-outlined">navigate_next</i>
+                </div>
+                <!-- User 2 -->
+                <div class="profile-button rect-button noselect" onclick="goTo('wallsarefamily.html')">
+                    <!-- Is a grid -->
+                    <img src="images/mildred.png" alt="Profile Picture" />
+                    <span class="profile-name">Mildred</span>
+                    <span class="profile-username">@wallsarefamily</span>
+                    <i class="material-symbols-outlined">navigate_next</i>
+                </div>
+                <!-- User 3 -->
+                <div class="profile-button rect-button bottom-radius-normal noselect" onclick="goTo('books4faber.html')">
+                    <!-- Is a grid -->
+                    <img src="images/faber.png" alt="Profile Picture" />
+                    <span class="profile-name">Faber</span>
+                    <span class="profile-username">@books4faber</span>
+                    <i class="material-symbols-outlined">navigate_next</i>
+                </div>
+            </div>
+
+            <!-- Profile Button that sticks to the bottom -->
+            <div class="bottom">
+                <!-- No need to be grid -->
+                <div class="profile-button" onclick="goTo('firemanguy.html')">
+                    <!-- Is a grid -->
+                    <img src="images/guym-modified.png"
+                        alt="Profile Picture" />
+                    <span class="profile-name">Guy Montag</span>
+                    <span class="profile-username">@firemanguy</span>
+                    <i class="material-symbols-outlined">more_horiz</i>
+                </div>
+            </div>
+        </div>
+
+        <div class="left-panel-compact noselect">
+            <div class="top-compact">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html"><img src="images/firelogo.png" alt="firelogo" /></a>
+                </div>
+
+                <div class="icon-button" onclick="goTo('index.html')">
+                    <i class="material-symbols-outlined">home</i>
+                </div>
+
+                <div class="icon-button" onclick="goTo('firemanguy.html')">
+                    <i class="material-symbols-outlined">account_circle</i>
+                </div>
+
+                <div class="action-button circle-icon-button" onclick="goTo('secret.html')">
+                    <i class="material-symbols-outlined">Fire!</i>
+                </div>
+            </div>
+
+            <div class="bottom-compact">
+                <!-- No need to be grid -->
+                <div class="profile-button" onclick="goTo('firemanguy.html')">
+                    <!-- Is a grid -->
+                    <img src="images/guym-modified.png"
+                        alt="Profile Picture" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+        <div class="main">
+            <div class="header" style="background-color:#595959">
+                <span class="noselect">Guy Montag - @firemanguy</span>
+            </div>
+
+            <div class="mobile-header">
+                <!-- Menu -->
+                <i class="icon-button icon-xlarge left material-symbols-outlined noselect">account_circle</i>
+                <!-- Logo -->
+                <div class="logo noselect">
+                    <a href="index.html"><img src="trex.png" alt="t-rex image" /></a>
+                </div>
+                <!-- More -->
+                <i class="icon-button icon-xlarge right material-symbols-outlined noselect">menu</i>
+            </div>
+
+            <div class="mobile-fab icon-button noselect">
+                <i class="material-symbols-outlined">add</i>
+            </div>
+
+            <div class="mobile-nav-bar noselect">
+                <div class="nav-button">
+                    <!-- HOME -->
+                    <i class="active-icon material-symbols-outlined action-icon noselect">home</i>
+                </div>
+                <div class="nav-button">
+                    <!-- SEARCH -->
+                    <i class="material-symbols-outlined noselect">search</i>
+                </div>
+                <div class="nav-button">
+                    <!-- AUDIO -->
+                    <i class="material-symbols-outlined noselect">mic</i>
+                </div>
+                <div class="nav-button">
+                    <!-- NOTIFICATIONS -->
+                    <i class="material-symbols-outlined noselect">notifications</i>
+                </div>
+                <div class="nav-button">
+                    <!-- INBOX -->
+                    <i class="material-symbols-outlined noselect">mail</i>
+                </div>
+            </div>
+
+            <div class="main-content-grid" id="first-tweet">
+                <div class="post">
+                    <!-- Text Post -->
+                    <img class="noselect" src="images/guym-modified.png" />
+                    <div class="right-content">
+                        <div class="user-details">
+                            <span class="profile-name">Guy Montag</span>
+                            <span class="profile-username">@firemanguy</span>
+                        </div>
+
+                        <div class="post-content-text">
+                            <p>
+                              Fine, I guess I’m really not Happy after all #fakehappiness
+                            </p>
+                        </div>
+
+                        <div class="content-buttons noselect">
+                            <i onclick="changeColor(this)"
+                                class="icon-button icon-xlarge highlight-blue material-symbols-outlined icon-not-filled">chat_bubble</i>
+                            <i
+                                class="icon-button icon-xlarge highlight-green material-symbols-outlined icon-not-filled">autorenew</i>
+                            <i onclick="changeState(this)"
+                                class="icon-button icon-xlarge like highlight-red material-symbols-outlined icon-not-filled">favorite</i>
+                            <i
+                                class="icon-button icon-xlarge highlight-blue material-symbols-outlined icon-not-filled">upload</i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <!-- Text Post -->
+                    <img class="noselect" src="images/guym-modified.png" />
+                    <div class="right-content">
+                        <div class="user-details">
+                            <span class="profile-name">Guy Montag</span>
+                            <span class="profile-username">@firemanguy</span>
+                        </div>
+
+                        <div class="post-content-text">
+                            <p>
+                              Someone help me find Clarisse McClellan: She’s 17, and I last saw her shaking a walnut tree (Don’t ask). I haven’t spoken to her in a while and I hope Beatty isn't a part of this ....
+                            </p>
+                        </div>
+
+                        <div class="content-buttons noselect">
+                            <i onclick="changeColor(this)"
+                                class="icon-button icon-xlarge highlight-blue material-symbols-outlined icon-not-filled">chat_bubble</i>
+                            <i
+                                class="icon-button icon-xlarge highlight-green material-symbols-outlined icon-not-filled">autorenew</i>
+                            <i onclick="changeState(this)"
+                                class="icon-button icon-xlarge like highlight-red material-symbols-outlined icon-not-filled">favorite</i>
+                            <i
+                                class="icon-button icon-xlarge highlight-blue material-symbols-outlined icon-not-filled">upload</i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <!-- Text Post -->
+                    <img class="noselect" src="images/guym-modified.png" />
+                    <div class="right-content">
+                        <div class="user-details">
+                            <span class="profile-name">Guy Montag</span>
+                            <span class="profile-username">@firemanguy</span>
+                        </div>
+
+                        <div class="post-content-text">
+                            <p>I guess a book is considered a loaded gun these days.</p>
+                        </div>
+
+                        <div class="content-buttons noselect">
+                            <i onclick="changeColor(this)"
+                                class="icon-button icon-xlarge highlight-blue material-symbols-outlined icon-not-filled">chat_bubble</i>
+                            <i
+                                class="icon-button icon-xlarge highlight-green material-symbols-outlined icon-not-filled">autorenew</i>
+                            <i onclick="changeState(this)"
+                                class="icon-button icon-xlarge like highlight-red material-symbols-outlined icon-not-filled">favorite</i>
+                            <i
+                                class="icon-button icon-xlarge highlight-blue material-symbols-outlined icon-not-filled">upload</i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <!-- Image Post -->
+                    <img class="noselect" src="images/guym-modified.png" />
+                    <div class="right-content">
+                        <div class="user-details">
+                            <span class="profile-name">Guy Montag</span>
+                            <span class="profile-username">@firemanguy</span>
+                        </div>
+
+                        <div class="post-content-text post-content-image">
+                            <p>Today would've been a good day but this thing came along. Can someone PLEASE get this GIANT HOUND AWAY FROM MY GODDAMN HOUSE!!! #toofar?</p>
+                            <img style="" src="images/hound.png" />
+                        </div>
+
+                        <div class="content-buttons noselect">
+                            <i onclick="changeColor(this)"
+                                class="icon-button icon-xlarge highlight-blue material-symbols-outlined icon-not-filled">chat_bubble</i>
+                            <i
+                                class="icon-button icon-xlarge highlight-green material-symbols-outlined icon-not-filled">autorenew</i>
+                            <i onclick="changeState(this)"
+                                class="icon-button icon-xlarge like highlight-red material-symbols-outlined icon-not-filled">favorite</i>
+                            <i
+                                class="icon-button icon-xlarge highlight-blue material-symbols-outlined icon-not-filled">upload</i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <!-- Text Post -->
+                    <img class="noselect" src="images/guym-modified.png" />
+                    <div class="right-content">
+                        <div class="user-details">
+                            <span class="profile-name">Guy Montag</span>
+                            <span class="profile-username">@firemanguy</span>
+                        </div>
+
+                        <div class="post-content-text">
+                            <p>I’m trying to memorize this book, but no. dEnHaM’S DeNTriFice. Reminds me of #ASieveinTheSand</p>
+                        </div>
+
+                        <div class="content-buttons noselect">
+                            <i onclick="changeColor(this)"
+                                class="icon-button icon-xlarge highlight-blue material-symbols-outlined icon-not-filled">chat_bubble</i>
+                            <i
+                                class="icon-button icon-xlarge highlight-green material-symbols-outlined icon-not-filled">autorenew</i>
+                            <i onclick="changeState(this)"
+                                class="icon-button icon-xlarge like highlight-red material-symbols-outlined icon-not-filled">favorite</i>
+                            <i
+                                class="icon-button icon-xlarge highlight-blue material-symbols-outlined icon-not-filled">upload</i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <!-- Text Post -->
+                    <img class="noselect" src="images/guym-modified.png" />
+                    <div class="right-content">
+                        <div class="user-details">
+                            <span class="profile-name">Guy Montag</span>
+                            <span class="profile-username">@firemanguy</span>
+                        </div>
+
+                        <div class="post-content-text">
+                            <p>
+                              Took a look at this new book that I found; it was fire, literally #TooHot #OnFire 🔥
+                            </p>
+                        </div>
+
+                        <div class="content-buttons noselect">
+                            <i onclick="changeColor(this)"
+                                class="icon-button icon-xlarge highlight-blue material-symbols-outlined icon-not-filled">chat_bubble</i>
+                            <i
+                                class="icon-button icon-xlarge highlight-green material-symbols-outlined icon-not-filled">autorenew</i>
+                            <i onclick="changeState(this)"
+                                class="icon-button icon-xlarge like highlight-red material-symbols-outlined icon-not-filled">favorite</i>
+                            <i
+                                class="icon-button icon-xlarge highlight-blue material-symbols-outlined icon-not-filled">upload</i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <!-- Text Post -->
+                    <img class="noselect" src="images/guym-modified.png" />
+                    <div class="right-content">
+                        <div class="user-details">
+                            <span class="profile-name">Guy Montag</span>
+                            <span class="profile-username">@firemanguy</span>
+                        </div>
+
+                        <div class="post-content-text">
+                            <p>
+                              I killed Beatty with fire, the Hound was chasing me, and my life was ruined. I then met Granger, and it was as if I was reborn. Too much for me to handle. #PhoenixRebirth
+                            </p>
+                        </div>
+
+                        <div class="content-buttons noselect">
+                            <i onclick="changeColor(this)"
+                                class="icon-button icon-xlarge highlight-blue material-symbols-outlined icon-not-filled">chat_bubble</i>
+                            <i
+                                class="icon-button icon-xlarge highlight-green material-symbols-outlined icon-not-filled">autorenew</i>
+                            <i onclick="changeState(this)"
+                                class="icon-button icon-xlarge like highlight-red material-symbols-outlined icon-not-filled">favorite</i>
+                            <i
+                                class="icon-button icon-xlarge highlight-blue material-symbols-outlined icon-not-filled">upload</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side bar -->
+        <div class="right-panel">
+            <!-- Grid 4 rows -->
+            <!-- 4 div stacked vertically -->
+            <div class="search" style="padding-bottom:60px">
+                <i class="material-symbols-outlined search-icon" style="color: white">search</i>
+                <input type="search" name="search-bar" class="search-bar" placeholder="Search" style="color: white"/>
+            </div>
+
+          <div class="whats-happening">
+              <h3 style="color:#fd9319">What's happening?</h3>
+
+              <!-- News 1 -->
+              <div class="news-button noselect" onclick="goTo('news.html#news1')">
+                  <!-- Is a grid -->
+                  <p class="news-page">One Nation News</p>
+                  <p class="news-title">Seashell Exchange Program Gets Approval From Senate</p>
+                  <img src="images/seashell.jpg"
+                      alt="Profile Picture" />
+              </div>
+              <!-- News 2 -->
+              <div class="news-button noselect" onclick="goTo('news.html#news2')">
+                  <!-- Is a grid -->
+                  <p class="news-page">One Nation News</p>
+                  <p class="news-title">National Truth Initiative Completes First Of Many School Visits</p>
+                  <img src="images/kids.jpg" alt="Profile Picture" />
+              </div>
+              <!-- News 3 -->
+              <div class="news-button noselect" onclick="goTo('news.html#news3')">
+                  <!-- Is a grid -->
+                  <p class="news-page">One Nation News</p>
+                  <p class="news-title">Ex-Fireman Apprehended Thanks To Mechanical Hound</p>
+                  <img src="images/mechhound.jpg" />
+              </div>
+              <!-- News 4 -->
+              <div class="news-button noselect" onclick="goTo('news.html#news4')">
+                  <!-- Is a grid -->
+                  <p class="news-page">One Nation News</p>
+                  <p class="news-title">Page Purge Day Marks A New Chapter Of History</p>
+                  <img src="images/burningbooks.png "
+                      alt="Profile Picture" />
+              </div>
+              <!-- Show more -->
+              <div class="text-button noselect"></div>
+          </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
